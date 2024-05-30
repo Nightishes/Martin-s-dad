@@ -1,0 +1,9 @@
+name = "martins-dad"
+main = "index.js"
+compatibility_date = "2024-05-30"
+
+
+route = { pattern = "example.org/*", zone_name = "example.org" }
+
+
+compatibility_flags = [ "nodejs_compat" ]

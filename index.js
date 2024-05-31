@@ -14,8 +14,6 @@ const client = new Client({
   ],
 });
 
-console.log("index" + client);
-
 client.cooldown = new Collection();
 client.commands = new Collection();
 const foldersPath = path.join(__dirname, "commands");

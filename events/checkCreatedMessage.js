@@ -8,6 +8,8 @@ const {
   proposalCompliment,
 } = require("../helpers/dictionnaryQuote");
 
+const { dadJokeDictionnary } = require("../helpers/dadDictionnary");
+
 const {
   badWordsDogshit,
   pizzaReminder,
@@ -17,104 +19,140 @@ const {
   dadIsComingHome,
   sproutSpotted,
   triggerBotKnowledge,
+  AUTHOR_WHITELIST,
+  dadJokeTrigger,
 } = require("../helpers/dictionaryKeywords");
 
+const handleCreatedMessage = (message) => {
+  const messageContent = message.content.toLowerCase();
+  if (!AUTHOR_WHITELIST.includes(message.author.id)) {
+    return;
+  }
+
+  // const isSubjectSelf = (messageContent) => {
+
+  //   return messageContent.test(/(\bi'?\s*a?m?\b)\s/gi);
+  // };
+
+  const isMessageTrigger = (messageContent, dictionary) => {
+    return dictionary.some((word) => messageContent.includes(word));
+  };
+
+  // const isAboutSelf = isSubjectSelf(messageContent);
+  const isGettingDogshit = isMessageTrigger(messageContent, badWordsDogshit);
+  const isGettingErp = isMessageTrigger(messageContent, erpTrigger);
+  const isGettingPizza = isMessageTrigger(messageContent, pizzaReminder);
+  const isGettingNina = isMessageTrigger(messageContent, ninaTrigger);
+  const isGettingDadHome = isMessageTrigger(messageContent, dadIsComingHome);
+  const isGettingSprout = isMessageTrigger(messageContent, sproutSpotted);
+  const isGettingKnowledge = isMessageTrigger(
+    messageContent,
+    triggerBotKnowledge
+  );
+  const isGettingRandom = isMessageTrigger(messageContent, randomMartinFact);
+  const isGettingDadJoke = isMessageTrigger(messageContent, dadJokeTrigger);
+
+  function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+  }
+
+  function dadPlayerMessage() {
+    let randomMessage = getRandomInt(messageDadHome.length);
+    message.channel.send(messageDadHome[randomMessage]);
+  }
+
+  function sproutPlayerMessage() {
+    let randomMessage = getRandomInt(proposalCompliment.length);
+    message.channel.send(proposalCompliment[randomMessage]);
+  }
+
+  function randomMartinPlayerMessage() {
+    let randomMessage = getRandomInt(randomMartinMoment.length);
+    message.channel.send(randomMartinMoment[randomMessage]);
+  }
+
+  function pizzaPlayerMessage() {
+    let randomMessage = getRandomInt(pizzaReminderDay.length);
+    message.channel.send(pizzaReminderDay[randomMessage]);
+  }
+
+  function ninaComplimentPlayerMessage() {
+    let randomMessage = getRandomInt(ninaCompliment.length);
+    message.channel.send(ninaCompliment[randomMessage]);
+  }
+  function erpPlayerMessage() {
+    let randomMessage = getRandomInt(erpReminderDay.length);
+    message.channel.send(erpReminderDay[randomMessage]);
+  }
+
+  function dogshitPlayerMessage() {
+    let randomMessage = getRandomInt(messageDogshitArray.length);
+    message.channel.send(messageDogshitArray[randomMessage]);
+  }
+
+  function dadJokePlayerMessage() {
+    let randomMessage = getRandomInt(dadJokeDictionnary.length);
+    message.channel.send(dadJokeDictionnary[randomMessage]);
+  }
+
+  const arrayCommand = [
+    dogshitPlayerMessage,
+    dadPlayerMessage,
+    sproutPlayerMessage,
+    pizzaPlayerMessage,
+    ninaComplimentPlayerMessage,
+    erpPlayerMessage,
+    randomMartinPlayerMessage,
+    dadJokePlayerMessage,
+  ];
+
+  if (AUTHOR_WHITELIST[0].includes(message.author.id)) {
+    if (isGettingDogshit) {
+      dogshitPlayerMessage();
+    }
+
+    if (isGettingPizza) {
+      pizzaPlayerMessage();
+    }
+    if (isGettingErp) {
+      erpPlayerMessage();
+    }
+
+    if (isGettingDadHome) {
+      dadPlayerMessage();
+    }
+
+    if (isGettingSprout) {
+      sproutPlayerMessage();
+    }
+
+    if (isGettingNina) {
+      ninaComplimentPlayerMessage();
+    }
+  }
+
+  function randomCommand() {
+    let randomMessage = getRandomInt(arrayCommand.length);
+    arrayCommand[randomMessage]();
+  }
+
+  if (AUTHOR_WHITELIST.includes(message.author.id)) {
+    if (isGettingKnowledge) {
+      randomCommand();
+    }
+
+    if (isGettingRandom) {
+      randomMartinPlayerMessage();
+    }
+
+    if (isGettingDadJoke) {
+      dadJokePlayerMessage();
+    }
+  }
+};
+
 function checkCreatedMessage(client) {
-  client.on("messageCreate", (message) => {
-    let userMessage = message.content.toLowerCase();
-
-    function getRandomInt(max) {
-      return Math.floor(Math.random() * max);
-    }
-
-    function dadPlayerMessage() {
-      let randomMessage = getRandomInt(messageDadHome.length);
-      message.channel.send(messageDadHome[randomMessage]);
-    }
-
-    function sproutPlayerMessage() {
-      let randomMessage = getRandomInt(proposalCompliment.length);
-      message.channel.send(proposalCompliment[randomMessage]);
-    }
-
-    function randomMartinPlayerMessage() {
-      let randomMessage = getRandomInt(randomMartinMoment.length);
-      message.channel.send(randomMartinMoment[randomMessage]);
-    }
-
-    function pizzaPlayerMessage() {
-      let randomMessage = getRandomInt(pizzaReminderDay.length);
-      message.channel.send(pizzaReminderDay[randomMessage]);
-    }
-
-    function ninaComplimentPlayerMessage() {
-      let randomMessage = getRandomInt(ninaCompliment.length);
-      message.channel.send(ninaCompliment[randomMessage]);
-    }
-    function erpPlayerMessage() {
-      let randomMessage = getRandomInt(erpReminderDay.length);
-      message.channel.send(erpReminderDay[randomMessage]);
-    }
-
-    function dogshitPlayerMessage() {
-      let randomMessage = getRandomInt(messageDogshitArray.length);
-      message.channel.send(messageDogshitArray[randomMessage]);
-    }
-
-    const arrayCommand = [
-      dogshitPlayerMessage,
-      dadPlayerMessage,
-      sproutPlayerMessage,
-      pizzaPlayerMessage,
-      ninaComplimentPlayerMessage,
-      erpPlayerMessage,
-      randomMartinPlayerMessage,
-    ];
-
-    if (message.author.id === "1204195877208465421") {
-      if (badWordsDogshit.find((x) => userMessage.includes(x))) {
-        dogshitPlayerMessage();
-      }
-
-      if (pizzaReminder.find((x) => userMessage.includes(x))) {
-        pizzaPlayerMessage();
-      }
-      if (erpTrigger.find((x) => userMessage.includes(x))) {
-        erpPlayerMessage();
-      }
-
-      if (dadIsComingHome.find((x) => userMessage.includes(x))) {
-        dadPlayerMessage();
-      }
-
-      if (sproutSpotted.find((x) => userMessage.includes(x))) {
-        sproutPlayerMessage();
-      }
-
-      if (ninaTrigger.find((x) => userMessage.includes(x))) {
-        ninaComplimentPlayerMessage();
-      }
-    }
-
-    function randomCommand() {
-      let randomMessage = getRandomInt(arrayCommand.length);
-      arrayCommand[randomMessage]();
-    }
-
-    if (
-      message.author.id === "235817429031321601" ||
-      message.author.id === "231755306928046080" ||
-      message.author.id === "185436977305354240"
-    ) {
-      if (triggerBotKnowledge.find((x) => userMessage.includes(x))) {
-        randomCommand();
-      }
-
-      if (randomMartinFact.find((x) => userMessage.includes(x))) {
-        randomMartinPlayerMessage();
-      }
-    }
-  });
+  client.on("messageCreate", handleCreatedMessage);
 }
 
 module.exports = { checkCreatedMessage };

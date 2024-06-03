@@ -1,13 +1,21 @@
 const messageDadHome = [
   "Hey, I'm finally back from the sto- What are you doing my son?!",
   "A moment please, dearest son, I require some milk. Be sure to wait for me!",
+  "https://tenor.com/view/my-honest-reaction-guy-man-eating-chips-gif-15358940996526520639",
+  "https://cdn.discordapp.com/attachments/853137704706375731/1246101605724721253/RDT_20231230_0951256910968619535688050-1.jpg?ex=665bd2ce&is=665a814e&hm=8846e116c241e8fb75a1f913fde0d1eae506149dcd248d85816e2aa6b06f90b5&",
   "https://tenor.com/view/kratos-dad-came-home-with-gif-27372972",
   "https://tenor.com/view/failure-gif-23242816",
+  "https://cdn.discordapp.com/attachments/717498714259980378/1246926711581311047/1634015868770.jpg?ex=665e2a7e&is=665cd8fe&hm=2f19295471a515f3b8ea5a835cb265c30630d7f6cdbd54a62841f7f60e1b3849&",
   "https://cdn.discordapp.com/attachments/938012257751797831/1246061826156789814/Martins_Dad.jpg?ex=665b0502&is=6659b382&hm=b1f8987c4296ed7c0f4db61160e79cb3f568ff0fc5d12e35f29f3cf0bd24921f&",
   "https://cdn.discordapp.com/attachments/853137704706375731/1246062846371168297/why_how_could_you-1.mp4?ex=665b05f5&is=6659b475&hm=583ea4fa9e231865500e14e792a67441c605347d0fe58c1c7d520d27239312b8&",
-  "I return home and I come to this shit again ... https://cdn.discordapp.com/attachments/668283306349166612/1245704061689528420/484627_4463723031558_706783833_n.png?ex=665a6090&is=66590f10&hm=db39b2b40d9d557e45fbb8a7e1bf010a35aacd532c29e2f30063e1d0c2c9ca8c&",
+  "I return home just to see this shit again ... https://cdn.discordapp.com/attachments/668283306349166612/1245704061689528420/484627_4463723031558_706783833_n.png?ex=665a6090&is=66590f10&hm=db39b2b40d9d557e45fbb8a7e1bf010a35aacd532c29e2f30063e1d0c2c9ca8c&",
   "https://cdn.discordapp.com/attachments/717498714259980378/1242592942028488875/2022-01-12_09-04-27_OBLITERATE_YOURSELF.mov?ex=665aec9b&is=66599b1b&hm=595a7ba293a924c076ecc8c61105c054d1d1c48c249f07cfbc7ce2afb271d21f&",
   "https://cdn.discordapp.com/attachments/826368743197900810/1246161448380665876/88216f62ac59d016ab06e388afb0f960.png?ex=665b61c9&is=665a1049&hm=4e55deb746b2f6b3ded8d6f0ff812838fbb7b29f595cc22371abca205750dffd&",
+  "Good boy, now shut up and let the adults speak.",
+  "What are gonna do, cry to sleep like every day?",
+  "https://tenor.com/view/gigachad-chad-gif-20773266",
+  "https://cdn.discordapp.com/attachments/717498714259980378/1246937353206104104/ryder_san_andreas.mp4?ex=665e3467&is=665ce2e7&hm=53ff626e0ed19a0277c1d35f8ff5129f2d21dd2ee75f9716bce5ee0b858ff569&",
+  "https://media.discordapp.net/attachments/1118508779521187940/1245155035776811128/20240527_213114.jpg?ex=665da73e&is=665c55be&hm=7688b9b8ed3826032ef68b665f704c59d67f242fc53fd216965b60937739da92&=&format=webp&width=472&height=512",
 ];
 
 const messageDogshitArray = [
@@ -22,6 +30,7 @@ const messageDogshitArray = [
   "https://tenor.com/view/fr-lie-gif-9063740662564569899",
   "Proposal: Needlessly repeating conversations on the same topic is a waste of energy resources.",
   "https://www.fflogs.com/character/eu/odin/trappiez%20reformed",
+  "https://tenor.com/view/yapping-yapper-yapping-man-old-guy-yapping-keep-yapping-gif-16586719177455162521",
 ];
 
 const pizzaReminderDay = [

@@ -28,9 +28,18 @@ const badWordsDogshit = [
   "FFXIV is so easy",
   "good at the game",
   "I'm bad at everything",
+  "bad",
+  "garbage",
+  "average",
+  "not good",
+  "mediocre",
+  "retard",
+  "missing",
+  "shit",
+  "gaming hands",
 ];
 
-const pizzaReminder = ["promise", "pizza"];
+const pizzaReminder = ["promise", "pizza", "trust", "loyal", "don't ditch"];
 
 const randomMartinFact = ["fun fact about martin"];
 
@@ -41,6 +50,12 @@ const erpTrigger = [
   "I quit erping",
   "erp",
   "uwu",
+  "reformed",
+  "owo",
+  ">.<",
+  "quit",
+  "limsa",
+  "catgirl",
 ];
 
 const ninaTrigger = [
@@ -51,11 +66,20 @@ const ninaTrigger = [
   "fluffy",
 ];
 
-const dadIsComingHome = ["milk", "dad"];
+const dadIsComingHome = ["milk", "dad", "gone", "father", "yapper"];
 
 const sproutSpotted = ["watching cutscenes", "sprout", "new player", "mentor"];
 
-const triggerBotKnowledge = ["tell me dad, what is your wisdom today?"];
+const triggerBotKnowledge = ["dad wisdom"];
+
+const AUTHOR_WHITELIST = [
+  "1204195877208465421", // MARTIN
+  "235817429031321601",
+  "231755306928046080",
+  "185436977305354240",
+];
+
+const dadJokeTrigger = ["funny joke"];
 
 module.exports = {
   badWordsDogshit,
@@ -66,4 +90,6 @@ module.exports = {
   dadIsComingHome,
   sproutSpotted,
   triggerBotKnowledge,
+  AUTHOR_WHITELIST,
+  dadJokeTrigger,
 };

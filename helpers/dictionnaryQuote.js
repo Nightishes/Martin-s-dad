@@ -1,6 +1,7 @@
 const messageDadHome = [
   "Hey, I'm finally back from the sto- What are you doing my son?!",
   "A moment please, dearest son, I require some milk. Be sure to wait for me!",
+  "Unfortunately, this is my son... https://cdn.discordapp.com/attachments/717498714259980378/1247244928048693278/vul3z_2024-05-22-00-50-28_1716306628897-1.mp4?ex=665f52db&is=665e015b&hm=4a4bd4b673b2a49a450cc9a2873a77c953e16476c7cb32c0a3f2610b6b946b42&",
   "https://tenor.com/view/my-honest-reaction-guy-man-eating-chips-gif-15358940996526520639",
   "https://cdn.discordapp.com/attachments/853137704706375731/1246101605724721253/RDT_20231230_0951256910968619535688050-1.jpg?ex=665bd2ce&is=665a814e&hm=8846e116c241e8fb75a1f913fde0d1eae506149dcd248d85816e2aa6b06f90b5&",
   "https://tenor.com/view/kratos-dad-came-home-with-gif-27372972",
@@ -16,6 +17,10 @@ const messageDadHome = [
   "https://tenor.com/view/gigachad-chad-gif-20773266",
   "https://cdn.discordapp.com/attachments/717498714259980378/1246937353206104104/ryder_san_andreas.mp4?ex=665e3467&is=665ce2e7&hm=53ff626e0ed19a0277c1d35f8ff5129f2d21dd2ee75f9716bce5ee0b858ff569&",
   "https://media.discordapp.net/attachments/1118508779521187940/1245155035776811128/20240527_213114.jpg?ex=665da73e&is=665c55be&hm=7688b9b8ed3826032ef68b665f704c59d67f242fc53fd216965b60937739da92&=&format=webp&width=472&height=512",
+  "https://www.youtube.com/shorts/poYbXZG6tu0?feature=share",
+  "https://tenor.com/view/itsrighthere-its-right-here-showit-gif-26494526",
+  "https://cdn.discordapp.com/attachments/668268259702865923/1248639351932452907/8t48gb.png?ex=66646584&is=66631404&hm=aa1869e1a7359e1e27883a715b2fc0ffc993169692f1dc04c117990460c78c68&",
+  "*Censored.*",
 ];
 
 const messageDogshitArray = [
@@ -31,6 +36,7 @@ const messageDogshitArray = [
   "Proposal: Needlessly repeating conversations on the same topic is a waste of energy resources.",
   "https://www.fflogs.com/character/eu/odin/trappiez%20reformed",
   "https://tenor.com/view/yapping-yapper-yapping-man-old-guy-yapping-keep-yapping-gif-16586719177455162521",
+  "*Censored.*",
 ];
 
 const pizzaReminderDay = [
@@ -38,16 +44,18 @@ const pizzaReminderDay = [
   "https://cdn.discordapp.com/attachments/668283306349166612/1246029992362643519/image.png?ex=665ae75c&is=665995dc&hm=6d5a4fbae6766dbce95218fcd3a908e3fbb57108f1050a891ba4040159705ae9&",
   "https://cdn.discordapp.com/attachments/668283306349166612/1245142702337556510/image.png?ex=665af8c1&is=6659a741&hm=6547068d1cebe7eede76f28b90cf5302114ef50e91856c1105f61536c911aab0&",
   "https://media.discordapp.net/attachments/577093144978391041/1239583677336391710/20240513_160830.jpg?ex=665a8603&is=66593483&hm=8ba6a820752a43f0dd03a4839fcf2fffc1fd7bc5fae11feb35a437c56d883e86&",
+  "*Censored.*",
 ];
 const erpReminderDay = [
   "https://cdn.discordapp.com/attachments/668283306349166612/1246030156305399888/image.png?ex=665ae783&is=66599603&hm=ff6349f9cf75c654c61099368e4891c9fc8d2320a9cc4b22a946edf674683d40&",
-  ":suspicious~2:",
   "https://cdn.discordapp.com/attachments/1127954716370944001/1237000620343300188/image.png?ex=665a5ada&is=6659095a&hm=754fbf4ff963b0c3867821211e1fe20787754cd598a153df27f79aa3e45fbf5c&",
   "https://tenor.com/view/hornyjail-bonk-baseballbat-kitty-cat-gif-19401897",
   "https://cdn.discordapp.com/attachments/905222590065442887/1246080302133153833/RDT_20240531_1536532069944591037616351.jpg?ex=665b1637&is=6659c4b7&hm=b7d35c8cb8619244a4091c3994d53ba9f61cf307a2cbce4ac35d0f9227d21228&",
+  "https://cdn.discordapp.com/attachments/717498714259980378/1247243997827829880/soul_of_cinder_fish_react.mp4?ex=665f51fd&is=665e007d&hm=4051783ef84466c44e85eaba79f708edd98828cc0c0afa117ccfa14fc0a8082d&",
 ];
 const proposalCompliment = [
   "Proposal: A word of appreciation is appropriate.",
+
   "Proposal: Let people enjoy their game.",
   "Proposal: Needlessly repeating conversations on the same topic is a waste of energy resources.",
   "Analysis: This area is composed of crystallized sprouts and dead mentors. Hypothesis: The enemy must have placed them here deliberately.",
@@ -58,7 +66,8 @@ const ninaCompliment = [
   "Proposal: Continue to provide care for this person.",
   "Proposal: This Ahri figurine will perfectly suit her desk.",
   "Proposal: Give attention to this person.",
-  "Look, that ultimate Immortalized Legend Ahri skin isn't gonna buy itself...",
+  "Look, that Immortalized Legend Ahri skin isn't gonna buy by itself...",
+  "https://cdn.discordapp.com/attachments/753208234910810213/1245716490150219836/dkjclgvvic3d1.png?ex=6664f823&is=6663a6a3&hm=6e57ba9246ff652df182d77fea7a3abb4f8f8b748f768521116c04c0d5ce771f&",
   "Don't forget your place : https://cdn.discordapp.com/attachments/577093144978391041/1242004303351119933/IMG_6552.jpg?ex=665ac2a5&is=66597125&hm=28f857dc14c8cf10d8fe86619342b775d6b94e603410e3771d605f170c14d3c8&",
 ];
 
@@ -72,10 +81,11 @@ const randomMartinMoment = [
   "https://youtu.be/7wMnhOYbQas",
   "https://cdn.discordapp.com/attachments/1246084001366544435/1246092696825892894/exodia.png?ex=665b21c2&is=6659d042&hm=b578b5f272e7e9d7a6d2e66f35acc4bd73c7c1b0a4b5,37536877cddb96139e1e&",
   "https://cdn.discordapp.com/attachments/668283306349166612/1243844407300591626/Screenshot_20240525-103304.png?ex=665adce0&is=66598b60&hm=54665510e4eeb6b46d97dfb6eda0f0ee2b59dab42fba56e494042afcaf021f52&",
-  "https://cdn.discordapp.com/attachments/1246084001366544435/1246101200227532821/20240503_122509.jpg?ex=665b29ad&is=6659d82d&hm=8b13f6a33f2c2367ec729cf39d90caa94216e10a720c28bedef36260beb27376&",
+  "Martin vs normal-sized people :  https://cdn.discordapp.com/attachments/1246084001366544435/1246101200227532821/20240503_122509.jpg?ex=665b29ad&is=6659d82d&hm=8b13f6a33f2c2367ec729cf39d90caa94216e10a720c28bedef36260beb27376&",
   "https://cdn.discordapp.com/attachments/826368743197900810/1246156591904854109/Tera_2023.09.09_-_00.27.01.04.DVR.mp4?ex=665b5d43&is=665a0bc3&hm=70dc4083c034e0407ad45d616f97e98f83172868fdb3c8746fb90ba23de91268&",
 ];
 
+// mommy said I shouldn't laugh at the disabled
 module.exports = {
   messageDadHome,
   messageDogshitArray,

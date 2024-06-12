@@ -1,5 +1,6 @@
 const dadJokeDictionnary = [
   "I tried to make up a joke about ghost but I couldn't. It had plenty of spirit but no body.",
+  "You exist.",
   "Today at the bank, an old lady asked me to check her balance... So I pushed her over. ",
   "Why did the egg have a day off? Because it was Fryday.",
   "I found a book called How to Solve 50% of Your Problems. So I bought 2. ",

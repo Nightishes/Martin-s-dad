@@ -4,6 +4,7 @@ const { Client, Collection, GatewayIntentBits } = require("discord.js");
 const { token } = require("./config.json");
 // const lodash = require("lodash");
 
+const { familyPostingMessage } = require("./events/familyPostingMessage.js");
 const { checkCreatedMessage } = require("./events/checkCreatedMessage.js");
 
 const client = new Client({
@@ -53,6 +54,8 @@ for (const file of eventFiles) {
 }
 
 checkCreatedMessage(client);
+
+familyPostingMessage(client);
 
 client.login(token);
 

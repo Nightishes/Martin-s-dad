@@ -10,6 +10,8 @@ const {
 
 const { dadJokeDictionnary } = require("../helpers/dadDictionnary");
 
+const { getRandomInt } = require("../helpers/randomHelpers");
+
 const {
   badWordsDogshit,
   pizzaReminder,
@@ -21,6 +23,7 @@ const {
   triggerBotKnowledge,
   AUTHOR_WHITELIST,
   dadJokeTrigger,
+  dadNegationTrigger,
 } = require("../helpers/dictionaryKeywords");
 
 const handleCreatedMessage = (message) => {
@@ -29,16 +32,17 @@ const handleCreatedMessage = (message) => {
     return;
   }
 
-  // const isSubjectSelf = (messageContent) => {
+  const isSubjectSelf = (messageContent) => {
+    let testingMessageContent = new RegExp(/(\bi'?\s*a?m?\b)\s/gi);
 
-  //   return messageContent.test(/(\bi'?\s*a?m?\b)\s/gi);
-  // };
+    return testingMessageContent.test(messageContent);
+  };
 
   const isMessageTrigger = (messageContent, dictionary) => {
     return dictionary.some((word) => messageContent.includes(word));
   };
 
-  // const isAboutSelf = isSubjectSelf(messageContent);
+  const isAboutSelf = isSubjectSelf(messageContent);
   const isGettingDogshit = isMessageTrigger(messageContent, badWordsDogshit);
   const isGettingErp = isMessageTrigger(messageContent, erpTrigger);
   const isGettingPizza = isMessageTrigger(messageContent, pizzaReminder);
@@ -51,10 +55,7 @@ const handleCreatedMessage = (message) => {
   );
   const isGettingRandom = isMessageTrigger(messageContent, randomMartinFact);
   const isGettingDadJoke = isMessageTrigger(messageContent, dadJokeTrigger);
-
-  function getRandomInt(max) {
-    return Math.floor(Math.random() * max);
-  }
+  const isGettingNoU = isMessageTrigger(messageContent, dadNegationTrigger);
 
   function dadPlayerMessage() {
     let randomMessage = getRandomInt(messageDadHome.length);
@@ -107,7 +108,7 @@ const handleCreatedMessage = (message) => {
   ];
 
   if (AUTHOR_WHITELIST[0].includes(message.author.id)) {
-    if (isGettingDogshit) {
+    if (isAboutSelf && isGettingDogshit) {
       dogshitPlayerMessage();
     }
 
@@ -147,6 +148,10 @@ const handleCreatedMessage = (message) => {
 
     if (isGettingDadJoke) {
       dadJokePlayerMessage();
+    }
+
+    if (isGettingNoU) {
+      message.channel.send("No u");
     }
   }
 };

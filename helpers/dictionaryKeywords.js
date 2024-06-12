@@ -1,25 +1,18 @@
 const badWordsDogshit = [
   "dogshit",
-  "garbage",
-  "i am bad",
   "read a guide",
   "so bad at videogames",
   "just press 1-2-3",
   "utter garbage",
   "just press 123",
-  "i am just average",
-  "i'm just average",
-  "im so fucking bad at the game",
+  "fucking bad at the game",
   "trash",
   "bad at the game",
-  "im a retard",
-  "i'm a retard",
+  "retard",
   "better than me",
   "game is just easy",
   "me being a bad player",
-  "average player",
   "everyone here is a better player than me",
-  "incredibly easy game",
   "easy game",
   "anyone can do what i do",
   "the very proof",
@@ -27,7 +20,7 @@ const badWordsDogshit = [
   "braindead",
   "FFXIV is so easy",
   "good at the game",
-  "I'm bad at everything",
+  "bad at everything",
   "bad",
   "garbage",
   "average",
@@ -37,6 +30,14 @@ const badWordsDogshit = [
   "missing",
   "shit",
   "gaming hands",
+  "parse gray",
+  "parse grey",
+  "parse",
+  "not skilled",
+  "unskilled",
+  "tragic",
+  "stupid",
+  "tragic",
 ];
 
 const pizzaReminder = ["promise", "pizza", "trust", "loyal", "don't ditch"];
@@ -66,8 +67,20 @@ const ninaTrigger = [
   "fluffy",
 ];
 
-const dadIsComingHome = ["milk", "dad", "gone", "father", "yapper"];
+const dadIsComingHome = [
+  "milk",
+  "dad",
+  "gone",
+  "father",
+  "yapper",
+  "paternal figure",
+  "stfu",
+  ":unamused:",
+  "shut up",
+  "angymad",
+];
 
+const dadNegationTrigger = ["no u", "no you"];
 const sproutSpotted = ["watching cutscenes", "sprout", "new player", "mentor"];
 
 const triggerBotKnowledge = ["dad wisdom"];
@@ -92,4 +105,5 @@ module.exports = {
   triggerBotKnowledge,
   AUTHOR_WHITELIST,
   dadJokeTrigger,
+  dadNegationTrigger,
 };

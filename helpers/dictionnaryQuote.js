@@ -50,12 +50,15 @@ const erpReminderDay = [
   "https://cdn.discordapp.com/attachments/668283306349166612/1246030156305399888/image.png?ex=665ae783&is=66599603&hm=ff6349f9cf75c654c61099368e4891c9fc8d2320a9cc4b22a946edf674683d40&",
   "https://cdn.discordapp.com/attachments/1127954716370944001/1237000620343300188/image.png?ex=665a5ada&is=6659095a&hm=754fbf4ff963b0c3867821211e1fe20787754cd598a153df27f79aa3e45fbf5c&",
   "https://tenor.com/view/hornyjail-bonk-baseballbat-kitty-cat-gif-19401897",
+  "https://cdn.discordapp.com/attachments/1127954716370944001/1252570772506021929/image.png?ex=6672b2ef&is=6671616f&hm=fff1945c78393c57ae79f2073406df5a69b5b369112bbb2fa2d8a872f3e12669&",
+  "https://tenor.com/view/doubt-press-x-la-noire-meme-x-button-gif-19259237",
+  "https://tenor.com/view/pjjfanbase-gif-21393231",
   "https://cdn.discordapp.com/attachments/905222590065442887/1246080302133153833/RDT_20240531_1536532069944591037616351.jpg?ex=665b1637&is=6659c4b7&hm=b7d35c8cb8619244a4091c3994d53ba9f61cf307a2cbce4ac35d0f9227d21228&",
   "https://cdn.discordapp.com/attachments/717498714259980378/1247243997827829880/soul_of_cinder_fish_react.mp4?ex=665f51fd&is=665e007d&hm=4051783ef84466c44e85eaba79f708edd98828cc0c0afa117ccfa14fc0a8082d&",
 ];
+
 const proposalCompliment = [
   "Proposal: A word of appreciation is appropriate.",
-
   "Proposal: Let people enjoy their game.",
   "Proposal: Needlessly repeating conversations on the same topic is a waste of energy resources.",
   "Analysis: This area is composed of crystallized sprouts and dead mentors. Hypothesis: The enemy must have placed them here deliberately.",
@@ -66,7 +69,8 @@ const ninaCompliment = [
   "Proposal: Continue to provide care for this person.",
   "Proposal: This Ahri figurine will perfectly suit her desk.",
   "Proposal: Give attention to this person.",
-  "Look, that Immortalized Legend Ahri skin isn't gonna buy by itself...",
+  "My son didn't even buy that Immortalized Legend Ahri skin. We all lost face...",
+  "My son so poor he couldn't afford to gift the Faker Ahri skin to her fiancée. Haiyaa...",
   "https://cdn.discordapp.com/attachments/753208234910810213/1245716490150219836/dkjclgvvic3d1.png?ex=6664f823&is=6663a6a3&hm=6e57ba9246ff652df182d77fea7a3abb4f8f8b748f768521116c04c0d5ce771f&",
   "Don't forget your place : https://cdn.discordapp.com/attachments/577093144978391041/1242004303351119933/IMG_6552.jpg?ex=665ac2a5&is=66597125&hm=28f857dc14c8cf10d8fe86619342b775d6b94e603410e3771d605f170c14d3c8&",
 ];

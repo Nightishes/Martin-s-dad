@@ -1,5 +1,6 @@
 const badWordsDogshit = [
   "dogshit",
+  "casual",
   "read a guide",
   "so bad at videogames",
   "just press 1-2-3",
@@ -52,6 +53,7 @@ const erpTrigger = [
   "erp",
   "uwu",
   "reformed",
+  "harem",
   "owo",
   ">.<",
   "quit",
